@@ -1,0 +1,27 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@/ui/*": [
+        "../../packages/ui/*"
+      ],
+      "@/services/*": [
+        "../../packages/services/*"
+      ],
+      "@/validation/*": [
+        "../../packages/validation/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

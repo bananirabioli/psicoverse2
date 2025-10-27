@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.nav-link {
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link.active, .nav-link:hover {
+  color: #14B8A6; /* teal-500 */
+  border-bottom-color: #14B8A6;
+}
+
+.bottom-nav-link.active i, .bottom-nav-link.active span {
+  color: #14B8A6; /* teal-500 */
+}
